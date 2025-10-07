@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 2em 1em;
+
+    font-family: 'Montserrat';
+    color: white;
+    background-color: #252526
+}
+
+h1 {
+    font-size: 3em;
+
+    color: white;
+    text-align: center;
+}
+
+input {
+    caret-color: transparent;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+
+    gap: 2em;
+    margin: 0 auto;
+    padding: 0;
+    max-width: calc(250px * 5 + 2em * 4);
+}
+
+@media (max-width: 768px) {
+    .album-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        max-width: 100%;
+    }
+}
+
+.album {
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.album:hover {
+    transform: translateY(-5px);
+}
+
+.album img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.shelf {
+    position: absolute;
+    bottom: -10px;
+
+    width: 100%;
+    height: 8px;
+
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.album:hover .shelf {
+    background-color: lightgray;
+}
+
+.album-meta {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 250px;
+    padding: 20px 10px 10px;
+
+    background-color: transparent;
+
+    transition: background-color 0.2s ease;
+}
+
+.album:hover .album-meta {
+    background-color: #39393b;
+}
+
+.album h2 {
+    margin: 0 0 2px;
+
+    font-size: 1.1em;
+    font-weight: 600;
+    
+    color: white;
+}
+
+.album p {
+    margin: 0;
+}
+
+.album .artist,
+.album .genre,
+.album .date {
+    color: gray;
+    transition: color 0.2s ease;
+}
+
+.album:hover .album-meta .artist,
+.album:hover .album-meta .genre,
+.album:hover .album-meta .date{
+    color: lightgray;
+}
+
+.meta-spacer {
+    height: 10px;
+}
+
+.meta-block {
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    transition: border-left 0.2s ease;
+}
+
+.album:hover .meta-block {
+    border-left: 1px solid transparent;
+}
+
+#search {
+    display: block;
+    width: 250px;
+    margin: 0 auto 40px auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #888;
+    padding: 6px 0;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    transition: border-bottom 0.2s ease;
+}
+
+#search:focus {
+    border-bottom: 8px solid gray;
+}
+
+#search::placeholder {
+    color: gray;
+    text-align: center;
+}
+
+/* WIP
+.scrolling-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+@keyframes scroller {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+
+    }
+}
