@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Cool Albums</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+    <link href="styles/styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+<h1>Cool Albums</h1>
+
+<form class="search-container" onsubmit="return false;">
+    <input id="search" placeholder="find albums..." type="text"/>
+</form>
+
+<main class="album-grid">
+
+    <div class="album">
+        <div class="image-wrapper">
+            <a href="https://www.discogs.com/master/8883-Michael-Jackson-Thriller" rel="noopener noreferrer" target="_blank">
+                <img alt="Thriller" src="images/thriller.jpg"/>
+            </a>
+            <div class="shelf"></div>
+        </div>
+        <div class="album-meta">
+            <div class="meta-block">
+                <h2>Thriller</h2>
+                <p class="artist">Michael Jackson</p>
+                <div class="meta-spacer"></div>
+                <p class="genre">Rock, R&B, Pop</p>
+                <p class="date">1982-11-30</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="album">
+        <div class="image-wrapper">
+            <a href="https://www.discogs.com/master/8517-Michael-Jackson-Bad" rel="noopener noreferrer" target="_blank">
+                <img alt="Bad" src="images/bad.jpg"/>
+            </a>
+            <div class="shelf"></div>
+        </div>
+        <div class="album-meta">
+            <div class="meta-block">
+                <h2>Bad</h2>
+                <p class="artist">Michael Jackson</p>
+                <div class="meta-spacer"></div>
+                <p class="genre">Funk, Rock, Pop</p>
+                <p class="date">1987-08-31</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="album">
+        <div class="image-wrapper">
+            <a href="https://www.discogs.com/master/1005683-%E5%91%A8%E6%9D%B0%E5%80%AB-11%E6%9C%88%E7%9A%84%E8%95%AD%E9%82%A6-Novembers-Chopin" rel="noopener noreferrer" target="_blank">
+                <img alt="Jay Chou" src="images/novembers_chopin.jpg"/>
+            </a>
+            <div class="shelf"></div>
+        </div>
+        <div class="album-meta">
+            <div class="meta-block">
+                <div class="scrolling-wrapper">
+                    <h2 class="title-scroll">November's Chopin</h2>
+                </div>
+                <p class="artist">Jay Chou</p>
+                <div class="meta-spacer"></div>
+                <p class="genre">R&B, Mandopop</p>
+                <p class="date">2005-11-01</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="album">
+        <div class="image-wrapper">
+            <a href="https://www.discogs.com/master/370097-Gotye-Making-Mirrors" rel="noopener noreferrer" target="_blank">
+                <img alt="Making Mirrors" src="images/making-mirrors.jpg"/>
+            </a>
+            <div class="shelf"></div>
+        </div>
+        <div class="album-meta">
+            <div class="meta-block">
+                <h2>Making Mirrors</h2>
+                <p class="artist">Gotye</p>
+                <div class="meta-spacer"></div>
+                <p class="genre">Electronic, Pop</p>
+                <p class="date">2011-08-19</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="album">
+        <div class="image-wrapper">
+            <a href="https://www.discogs.com/master/1704000-Pink-Guy-Pink-Season" rel="noopener noreferrer" target="_blank">
+                <img alt="Pink Season" src="images/pink-season.jpg"/>
+            </a>
+            <div class="shelf"></div>
+        </div>
+        <div class="album-meta">
+            <div class="meta-block">
+                <h2>Pink Season</h2>
+                <p class="artist">Pink Guy</p>
+                <div class="meta-spacer"></div>
+                <p class="genre">Hip-Hop</p>
+                <p class="date">2017-01-04</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="album">
+        <div class="image-wrapper">
+            <a href="https://www.discogs.com/master/2851975-Joji-Smithereens" rel="noopener noreferrer" target="_blank">
+                <img alt="Smithereens" src="images/smithereens.jpg"/>
+            </a>
+            <div class="shelf"></div>
+        </div>
+        <div class="album-meta">
+            <div class="meta-block">
+                <h2>Smithereens</h2>
+                <p class="artist">Joji</p>
+                <div class="meta-spacer"></div>
+                <p class="genre">Funk, Pop</p>
+                <p class="date">2022-11-04</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="scripts/search.js"></script>
+<script src="scripts/title-scroller.js"></script>
+</body>
+</html>
